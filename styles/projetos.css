@@ -1,0 +1,139 @@
+body{
+    font-family: 'EB Garamond', serif;
+    background-color: #7a2237;
+    color: white;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    width: 147px;
+    margin: auto;
+}
+
+header a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;   
+}
+
+.cards{
+    max-width: 1280px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.card{
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    background-color:#b0b5b4;
+    border-radius: 8px 50px;
+    border: 2px solid white;  
+    animation-name: up;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    transition: 600ms;  
+}
+
+.card:hover{
+    transform: translateY(-25px);
+}
+
+.card .imagem img{
+        width: 100%;
+        border-radius: 8px 50px;
+
+        
+}
+
+.card .imagem{
+    padding:10px;
+}
+
+.card .titulo{
+    background-color: black;
+    border-radius: 8px;
+}
+
+.card .discricao{
+    font-size: 20px;
+    
+}
+
+.espacamento{
+    margin-bottom: 20px;
+    padding: 15px;
+
+}
+
+button{
+    width: 130px;
+    height: 50px;
+    background-color:#b7ede2;
+    border: 0;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 500ms ease-in-out;
+}
+
+button:hover{
+    background-color:white;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal .content {
+    background-color: #424242 ;
+    border: 4px solid #8c7ae6;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto ;
+}
+
+.modal .content span img {
+    width: 25px;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(20px)
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+

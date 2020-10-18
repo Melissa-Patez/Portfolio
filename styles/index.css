@@ -1,0 +1,99 @@
+body{
+    font-family: 'EB Garamond', serif;
+    background-color: #7a2237;
+    color: white;
+    box-sizing: border-box;
+
+}
+
+header{
+  display: flex;
+  width: 147px;
+  margin: auto;
+}
+
+header a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+.container{
+  margin-top: 70px;
+  text-align: center;
+
+}
+
+.nome{
+  font-size: 45px;
+  margin: 30px 0;
+}
+
+.trabalho{
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.descricao{
+  font-size:30px;
+  margin: 30px 0;
+}
+
+.frase{
+  font-size:17px;
+  color: #27e3c0;
+}
+
+.imagem img{
+  border-radius: 50%;
+  border: 4px solid #27e3c0;
+  animation-name: up;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+}
+
+footer{
+  display: flex;
+  width:200px;
+  margin: auto;
+}
+
+footer a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  font-size: 17px;
+}
+
+.links{
+  transition: 200ms ease-in-out;
+}
+
+.links:hover{
+  color:#27e3c0;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(25px)
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
